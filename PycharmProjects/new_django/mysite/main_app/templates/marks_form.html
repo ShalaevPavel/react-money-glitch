@@ -1,0 +1,16 @@
+{% extends 'root.html'%}
+
+
+{% block title %} Create new field for mark {% endblock %}
+
+{% block content %}
+Create
+<form method="post" action="/new_mark/">
+     {% csrf_token %}
+    <h2>Create New</h2>
+
+    <button type="submit", name="i wanna save it">Create new</button>
+
+</form>
+{% endblock %}
+

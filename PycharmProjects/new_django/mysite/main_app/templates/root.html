@@ -1,0 +1,187 @@
+<html lang="en">
+{% load static %}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+       <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Scrolling Nav - Start Bootstrap Template</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body id="page-top" class="bg-c">
+
+         Navigation
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+<!--                <a class="navbar-brand" href="#page-top">Color Chemistry</a> </h1>-->
+                <img src="{%static 'images/logo.jpg' %}" width="200" height="100" align="center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Наши услуги</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Связаться с нами</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#location">Схема проезда</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <header class="bg-primary bg-gradient text-white">
+
+            <div class="container px-4 text-center" >
+                <h1 class="fw-bolder">Color chemistry Minsk</h1>
+                <p class="lead-1">Клуб юных химиков для детей 5-14 лет</p>
+                <a class="btn btn-lg btn-light" href="#about">Узнать больше</a>
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>О нас</h2>
+
+                        <section class="carousel" aria-label="Gallery">
+                          <ol class="carousel__viewport">
+                            <li id="carousel__slide1"
+                                tabindex="0"
+                                class="carousel__slide">
+                              <div class="carousel__snapper">
+                                <a href="#carousel__slide4"
+                                   class="carousel__prev">Go to last slide</a>
+                                <a href="#carousel__slide2"
+                                   class="carousel__next">Go to next slide</a>
+                              </div>
+                            </li>
+                            <li id="carousel__slide2"
+                                tabindex="0"
+                                class="carousel__slide">
+                              <div class="carousel__snapper"></div>
+                              <a href="#carousel__slide1"
+                                 class="carousel__prev">Go to previous slide</a>
+                              <a href="#carousel__slide3"
+                                 class="carousel__next">Go to next slide</a>
+                            </li>
+                            <li id="carousel__slide3"
+                                tabindex="0"
+                                class="carousel__slide">
+                              <div class="carousel__snapper"></div>
+                              <a href="#carousel__slide2"
+                                 class="carousel__prev">Go to previous slide</a>
+                              <a href="#carousel__slide4"
+                                 class="carousel__next">Go to next slide</a>
+                            </li>
+                            <li id="carousel__slide4"
+                                tabindex="0"
+                                class="carousel__slide" >
+                              <div class="carousel__snapper"></div>
+                              <a href="#carousel__slide3"
+                                 class="carousel__prev">Go to previous slide</a>
+                              <a href="#carousel__slide1"
+                                 class="carousel__next">Go to first slide</a>
+                            </li>
+                          </ol>
+                          <aside class="carousel__navigation">
+                            <ol class="carousel__navigation-list">
+                              <li class="carousel__navigation-item">
+                                <a href="#carousel__slide1"
+                                   class="carousel__navigation-button">Go to slide 1</a>
+                              </li>
+                              <li class="carousel__navigation-item">
+                                <a href="#carousel__slide2"
+                                   class="carousel__navigation-button">Go to slide 2</a>
+                              </li>
+                              <li class="carousel__navigation-item">
+                                <a href="#carousel__slide3"
+                                   class="carousel__navigation-button">Go to slide 3</a>
+                              </li>
+                              <li class="carousel__navigation-item">
+                                <a href="#carousel__slide4"
+                                   class="carousel__navigation-button">Go to slide 4</a>
+                              </li>
+                            </ol>
+                          </aside>
+                        </section>
+                        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+                        <ul>
+                            <li>Clickable nav links that smooth scroll to page sections</li>
+                            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+                            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+                            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services section-->
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Наши услуги</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section-->
+        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Связаться с нами</h2>
+                            <div class="card" style="width: 40rem;">
+                              <div class="card-body">
+                                <h5 class="card-title">Наши социальные сети</h5>
+                                <p class="card-text">Вы можете записаться по телефону +375296121005 или связаться с помощью социальных сетей</p>
+                                <a href="viber://chat/?number=%2B375296121005" class="btn btn-primary">Viber</a>
+                                <a href="#" class="btn btn-primary">Facebook</a>
+                                <a href="https://api.whatsapp.com/send?phone=<375296121005>" class="btn btn-success">Whatsapp</a>
+                                <a href="https://www.instagram.com/colorchemistry__minsk/channel/">
+                                        <img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                                             width=50" height="35"></a>
+                              </div>
+                            </div>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light" id="location">
+            <div class="container px-4">
+
+                <div class="row gx-4 justify-content-lg-around">
+                     <div class="col-lg-8">
+                        <h2>Как к нам доехать</h2>
+                        <p align="left">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06dc588d1ad25521d1d6429f3fbf7981cf2840267b776f87f325e1d49d06a688&amp;width=738&amp;height=643&amp;lang=ru_RU&amp;scroll=true"></script>
+
+                        </p>
+                        <p align="right">
+                            <h3>Пр-т дзержинского 74, 4 подъезд</h3>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cntrl + shift + r-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Color chemistry Minsk 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>
